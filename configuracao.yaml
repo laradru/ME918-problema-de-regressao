@@ -1,10 +1,19 @@
 tabela: iris.csv
-pares:
-  - "y": Sepal.Length
-    "x": Sepal.Width
-  - "y": Petal.Length
-    "x": Sepal.Width
-  - "y": Sepal.Length
-    "x": Species
-regressao: linear
+modelos:
+  - "nome_modelo": modelo1
+    "y": Sepal.Length
+    "x": [Sepal.Width, Petal.Length]
+    "tipo": linear
+  - "nome_modelo": modelo2
+    "y": Sepal.Length
+    "x": [Sepal.Width, Petal.Length]
+    "tipo": linear
+    "metodo_np":
+  - "nome_modelo": modelo3
+    "y": Sepal.Length
+    "x": [Sepal.Width, Petal.Length]
+    "tipo": linear
+     
+
+
 

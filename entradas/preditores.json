@@ -1,0 +1,19 @@
+{
+  "modelos": [
+    {
+      "nome_modelo": "modelo1",
+      "preditoras": [
+        {"Sepal.Width":1,"Petal.Length":3},
+        {"Sepal.Width":2,"Petal.Length":4}
+      ]
+    },
+    {
+      "nome_modelo": "modelo2",
+      "preditoras": [
+        {"Sepal.Width":10,"Petal.Length":20},
+        {"Sepal.Width":2,"Petal.Length":4}
+      ]
+    }
+  ]
+  
+}

@@ -2,7 +2,7 @@
 treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ){
   dados <- read_csv(paste("entradas/",filename , sep = ""))
   
-  if(tipo == "lm"){
+  if(tipo == "linear"){
     formula <- paste(y,"~", X[1])
     
     for (i in 2:length(X)){
@@ -21,9 +21,9 @@ treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ){
   }
 }
 
-teste <- treinamento("iris.csv","ss","Sepal.Width", c("Petal.Width", "Petal.Length"))
+teste <- treinamento("iris.csv","linear","Sepal.Width", c("Petal.Width", "Petal.Length"))
 
-as.matrix(dados[,c("Petal.Width", "Petal.Length")]
-ss(x = as.matrix(dados[,c("Petal.Width", "Petal.Length")]), y = dados[,"Sepal.Length"], method = npr_metodo)
+#as.matrix(dados[,c("Petal.Width", "Petal.Length")]
+#ss(x = as.matrix(dados[,c("Petal.Width", "Petal.Length")]), y = dados[,"Sepal.Length"], method = npr_metodo)
 
   
