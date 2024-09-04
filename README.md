@@ -11,7 +11,7 @@ Camilo Queiroz, Lara Maria Herrera Drugowick e Rodrigo Caldiron, como
 parte das atividades realizadas na disciplina de ME918-2S-2024 (Produto de
 Dados) do curso de Estatística da UNICAMP.
 
-# Instruções de uso e funcionamento:
+# Instruções de uso e funcionamento
 
 O objetivo deste produto é fornecer ao usuário predições decorrentes da
 análise de dados com variáveis quantitativas, utilizando diferentes
@@ -23,24 +23,24 @@ que você tenha os seguintes requisitos em sua máquina:
 
 ### Ambiente de desenvolvimento e avaliação
 
-Os scripts para o treinamento, predição e análise gráfica dos dados
-estão disponíveis na pasta “scripts”.
+Os *scripts* para o treinamento, predição e análise gráfica dos dados
+estão disponíveis na pasta “*scripts*”.
 
-O script “treinamento” contém as funções de regressão do produto. As
-regressões utilizadas no treinamento são: Regressão Linear, Regressão
-Lasso e Regressão Não-Paramétrica.
+O *script* “treinamento” contém as funções de regressão do produto. As
+regressões utilizadas no treinamento são: Regressão Linear (linear), Regressão
+Lasso (lasso) e Regressão Não-Paramétrica (np).
 
 treinamento(): é a função principal com os modelos preditivos. Recebe os
 seguintes argumentos:  
-- filename: banco de dados forncedidos pelo usuário na pasta
+- *filename*: banco de dados fornecidos pelo usuário na pasta
 “entradas”;  
-- tipo: é tipo da regressão escolhida pelo usuário (Linear, Lasso ou
-Não-paramétrica);  
+- tipo: é tipo da regressão escolhida pelo usuário (linear, lasso ou
+np);  
 - y: variável resposta a ser predita;  
-- x: variáveis preditoras;  
-- npr_metodo: por default, npr_metodo.  
+- x: vetor de variáveis preditoras;  
+- npr_metodo: por "*default*", npr_metodo.  
 
-O script “predição” contém a função getPredicao(), para leitura dos
+O *script* “predição” contém a função getPredicao(), para leitura dos
 valores das variáveis preditoras do modelo treinado e geração dos
 valores preditos.
 
