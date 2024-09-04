@@ -47,7 +47,7 @@ valores preditos.
 O script “grafico” contém o código para a geração dos gráficos de
 dispersão dos dados. A função executada é `grafico()` e recebe como argumentos:  
 - *model_name*: o nome do modelo do arquivo de configuração;  
-- tipo: é o tipo da regressão escolhida pelo usuário (linear, lasso ou
+- tipo: o tipo da regressão escolhida pelo usuário (linear, lasso ou
 np);  
 - y: variável resposta (sendo o *default* y = 0 na regressão linear)  
 - x: variáveis preditoras (sendo o *default* x = 0 na regressão linear)
