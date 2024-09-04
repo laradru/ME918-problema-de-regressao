@@ -30,7 +30,7 @@ O *script* “treinamento” contém as funções de regressão do produto. As
 regressões utilizadas no treinamento são: Regressão Linear (linear), Regressão
 Lasso (lasso) e Regressão Não-Paramétrica (np).
 
-treinamento(): é a função principal com os modelos preditivos. Recebe os
+`treinamento()`: é a função principal com os modelos preditivos. Recebe os
 seguintes argumentos:  
 - *filename*: banco de dados fornecidos pelo usuário na pasta
 “entradas”;  
@@ -40,18 +40,17 @@ np);
 - x: vetor de variáveis preditoras;  
 - npr_metodo: por "*default*", npr_metodo.  
 
-O *script* “predição” contém a função getPredicao(), para leitura dos
+O *script* “predição” contém a função `getPredicao()`, para leitura dos
 valores das variáveis preditoras do modelo treinado e geração dos
 valores preditos.
 
-<<<<<<< HEAD
-O script “gráfico” contém o código para a geração dos gráficos de
-dispersão dos dados. Recebe como argumentos:  
-- model_name: o nome do modelo do arquivo de configuração;  
-- tipo: é tipo da regressão escolhida pelo usuário (Linear, Lasso ou
-Não-paramétrica);  
-- y: variável resposta (o default é y = 0 na regressão linear)  
-- x: variáveis preditoras (o default é x = 0 na regressão linear)
+O script “grafico” contém o código para a geração dos gráficos de
+dispersão dos dados. A função executada é `grafico()` e recebe como argumentos:  
+- *model_name*: o nome do modelo do arquivo de configuração;  
+- tipo: é o tipo da regressão escolhida pelo usuário (linear, lasso ou
+np);  
+- y: variável resposta (sendo o *default* y = 0 na regressão linear)  
+- x: variáveis preditoras (sendo o *default* x = 0 na regressão linear)
 
 ### Requisitos de entrada (para o USUÁRIO):
 
