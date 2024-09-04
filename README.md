@@ -26,8 +26,8 @@ que você tenha os seguintes requisitos em sua máquina:
 Os *scripts* para o treinamento, predição e análise gráfica dos dados
 estão disponíveis na pasta “*scripts*”.
 
-O *script* “treinamento” contém as funções de regressão do produto. As
-regressões utilizadas no treinamento são: Regressão Linear (linear), Regressão
+O *script* “treinamento” contém as funções de regressão elaboradas para o produto. Os modelos de
+regressão utilizados no treinamento são: Regressão Linear (linear), Regressão
 Lasso (lasso) e Regressão Não-Paramétrica (np).
 
 `treinamento()`: é a função principal com os modelos preditivos. Recebe os
