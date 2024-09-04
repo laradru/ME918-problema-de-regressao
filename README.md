@@ -56,11 +56,17 @@ np);
 
 Por favor, ao utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
-- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um output será gerado com uma mensagem de erro  -
-=======
-O script “gráfico” contém
+- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um output será gerado com uma mensagem de erro.
+-  
 
-grafico \<- function(model_name,tipo,x = 0,y = 0)
+
+
+
+
+
+
+
+
 
 ### Requisitos de entrada
 >>>>>>> 0ccf707bcd69305654c7dd8f20eaa8d3b1d7aada
