@@ -54,8 +54,8 @@ np);
 
 ### Requisitos de entrada (para o USUÁRIO):
 
-Por favor, ao utilizar o produti verifique os seguintes requisitos: -
-colocar o banco de dados no formato “.csv” na pasta “entradas”.  
+Por favor, ao utilizar o produto, certifique-se que:\
+- seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
 - utilize somente variáveis do tipo “quantitativas”, caso contrário
 retornará um erro na utilização do produto. -
 =======
