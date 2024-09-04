@@ -44,11 +44,28 @@ O script “predição” contém a função getPredicao(), para leitura dos
 valores das variáveis preditoras do modelo treinado e geração dos
 valores preditos.
 
+<<<<<<< HEAD
+O script “gráfico” contém o código para a geração dos gráficos de
+dispersão dos dados. Recebe como argumentos:  
+- model_name: o nome do modelo do arquivo de configuração;  
+- tipo: é tipo da regressão escolhida pelo usuário (Linear, Lasso ou
+Não-paramétrica);  
+- y: variável resposta (o default é y = 0 na regressão linear)  
+- x: variáveis preditoras (o default é x = 0 na regressão linear)
+
+### Requisitos de entrada (para o USUÁRIO):
+
+Por favor, ao utilizar o produti verifique os seguintes requisitos: -
+colocar o banco de dados no formato “.csv” na pasta “entradas”.  
+- utilize somente variáveis do tipo “quantitativas”, caso contrário
+retornará um erro na utilização do produto. -
+=======
 O script “gráfico” contém
 
 grafico \<- function(model_name,tipo,x = 0,y = 0)
 
 ### Requisitos de entrada
+>>>>>>> 0ccf707bcd69305654c7dd8f20eaa8d3b1d7aada
 
 config …nome é o mesmo do modelo de cofiguracao nao pode colocar 2
 modelos cm mesmo nome nao pode var categorica. aruqivos
