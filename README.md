@@ -18,7 +18,7 @@ análise de dados com variáveis quantitativas, utilizando diferentes
 modelos de regressão. Antes de utilizar o produto, por favor, garanta
 que você tenha os seguintes requisitos em sua máquina:
 
-- Um banco de dados em na extensão .csv ;  
+- Um banco de dados em na extensão `.csv` ;  
 - Software R (versão 4.3.1 ou superior) e R-studio (versão 2024.4.2.764 "Chocolate Cosmos" ou superior)  
 
 ### Ambiente de desenvolvimento e avaliação
