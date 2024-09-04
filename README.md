@@ -8,7 +8,7 @@
 
 Este produto foi desenvolvido por Enzo Putton Tortelli de Souza, Felipe
 Camilo Queiroz, Lara Maria Herrera Drugowick e Rodrigo Caldiron, como
-parte das atividades realizadas na disciplina de ME918 (Produto de
+parte das atividades realizadas na disciplina de ME918-2S-2024 (Produto de
 Dados) do curso de Estatística da UNICAMP.
 
 # Instruções de uso e funcionamento:
@@ -19,7 +19,7 @@ modelos de regressão. Antes de utilizar o produto, por favor, garanta
 que você tenha os seguintes requisitos em sua máquina:
 
 - Um banco de dados em na extensão .csv ;  
-- Software R (versãoxxxx ) e R-studio (versão xxxxx)  
+- Software R (versão 4.3.1 ou superior) e R-studio (versão 2024.4.2.764 "Chocolate Cosmos" ou superior)  
 
 ### Ambiente de desenvolvimento e avaliação
 
