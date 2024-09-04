@@ -54,10 +54,9 @@ np);
 
 ### Requisitos de entrada (para o USUÁRIO):
 
-Por favor, ao utilizar o produto, certifique-se que:\
+Por favor, ao utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
-- utilize somente variáveis do tipo “quantitativas”, caso contrário
-retornará um erro na utilização do produto. -
+- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um output será gerado com uma mensagem de erro  -
 =======
 O script “gráfico” contém
 
