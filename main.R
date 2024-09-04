@@ -31,7 +31,7 @@ write(toJSON(getPredicao()), file = "saidas/predicoes.json") #modificar o script
 #definido funcao grafico
 source("scripts/grafico.r")
 
-teste <- grafico("modelo1", "linear")
+teste <- grafico("modelo_lm", "linear")
 teste
 
 

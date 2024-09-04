@@ -1,19 +1,27 @@
 {
   "modelos": [
     {
-      "nome_modelo": "modelo1",
+      "nome_modelo": "modelo_lm",
       "preditoras": [
         {"Sepal.Width":1,"Petal.Length":3},
         {"Sepal.Width":2,"Petal.Length":4}
       ]
     },
     {
-      "nome_modelo": "modelo2",
+      "nome_modelo": "modelo_np",
       "preditoras": [
-        {"Sepal.Width":10,"Petal.Length":20},
+        {"Sepal.Width":10},
+        {"Sepal.Width":5}
+      ]
+    },
+    {
+      "nome_modelo": "modelo_lasso",
+      "preditoras": [
+        {"Sepal.Width":1,"Petal.Length":3},
         {"Sepal.Width":2,"Petal.Length":4}
       ]
     }
+    
   ]
   
 }
