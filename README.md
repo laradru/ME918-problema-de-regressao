@@ -59,8 +59,7 @@ Por favor, antes de utilizar o produto, certifique-se que:
 - suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
 - o arquivo `configuracao.yaml` esteja devidamente padronizado, com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
 
-{
-  tabela: iris.csv
+{tabela: iris.csv
 modelos:
   - "nome_modelo": modelo_lm
     "y": Sepal.Length
