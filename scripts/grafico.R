@@ -22,14 +22,14 @@ getGrafico <- function(dados_nome,modelo_nome, tipo, X = 0, y = 0) {
   df <- data.frame(valores_observados, valores_fitados)
   
   ggrafico <- ggplot(df,aes(x = valores_fitados, y = valores_observados)) +
-    geom_point()+
-    geom_vline(xintercept =  valores_preditos[[2]], color = 2)
+    geom_point() +
+    geom_vline(xintercept =  valores_preditos[[2]], color = 2) +
+    labs(title = "Valores ajustados x valores observados",
+         x = "Valores ajustados",
+         y = "Valores observados") +
+    theme_bw()
   
   return(ggrafico)
   
 }
-
-
-ggplot(df,aes(x = coisa, y = coisa1)) +
-  geom_point()
 
