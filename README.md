@@ -95,7 +95,7 @@ onde:
 config …nome é o mesmo do modelo de cofiguracao nao pode colocar 2
 modelos cm mesmo nome nao pode var categorica. aruqivos
 alteraveis….arquiv csv , preditores jason…configuracao.yaml.
-o nome do modelo deve ser escrito sempre da mesma forma
+
 ### Resultados produzidos
 
 
