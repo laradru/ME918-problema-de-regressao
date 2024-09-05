@@ -52,13 +52,30 @@ np);
 - y: variável resposta (sendo o *default* y = 0 na regressão linear)  
 - x: variáveis preditoras (sendo o *default* x = 0 na regressão linear)
 
-### Requisitos de entrada (para o USUÁRIO):
+### Requisitos para o USUÁRIO:
 
-Por favor, ao utilizar o produto, certifique-se que:
+Por favor, antes de utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
 - suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
-- 
+- o arquivo `configuracao.yaml` esteja devidamente padronizado, com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
 
+{
+  tabela: iris.csv
+modelos:
+  - "nome_modelo": modelo_lm
+    "y": Sepal.Length
+    "x": [Petal.Length]
+    "tipo": linear
+  - "nome_modelo": modelo_np
+    "y": Sepal.Length
+    "x": [Sepal.Width]
+    "tipo": np
+    "metodo_np":
+  - "nome_modelo": modelo_lasso
+    "y": Sepal.Length
+    "x": [Sepal.Width, Petal.Length]
+    "tipo": lasso
+}
 
 
 
