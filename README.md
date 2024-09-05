@@ -57,7 +57,7 @@ np);
 Por favor, ao utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
 - suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
-- o nome do modelo
+- 
 
 
 
@@ -74,7 +74,7 @@ Por favor, ao utilizar o produto, certifique-se que:
 config …nome é o mesmo do modelo de cofiguracao nao pode colocar 2
 modelos cm mesmo nome nao pode var categorica. aruqivos
 alteraveis….arquiv csv , preditores jason…configuracao.yaml.
-
+o nome do modelo deve ser escrito sempre da mesma forma
 ### Resultados produzidos
 
 ``` r
