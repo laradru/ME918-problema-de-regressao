@@ -25,24 +25,16 @@ for (i in 1:length(config$modelos)){
 
 source("scripts/predicao.r")
 
-# Escrevendo a predicão
+# Escrevendo predições
 write(toJSON(getPredicao()), file = "saidas/predicoes.json") #modificar o script predicao para comportar outros modelos
 
-#definido funcao grafico
+#definindo funçao gráfico
 source("scripts/grafico.r")
 
-teste <- grafico("modelo_lm", "linear")
-teste
-
+# Escrevendo graficos
+for (i in 1:length(config$modelos)){
+  grafico <- getGrafico(config$tabela, config$modelos[[i]]$nome_modelo,config$modelos[[i]]$tipo,config$modelos[[i]]$x,config$modelos[[i]]$y)
+  ggsave(paste("saidas/",config$modelos[[i]]$nome_modelo,".jpeg",sep = ""))
+}
 
 #testes
-
-cv_model <- cv.glmnet(as.matrix(data.frame(Sepal.Length = iris$Sepal.Length, Sepal.Width = iris$Sepal.Width)), iris$Petal.Length, alpha = 1)
-
-best_lambda <- cv_model$lambda.min
-
-best_model <- glmnet(as.matrix(data.frame(Sepal.Length = iris$Sepal.Length, Sepal.Width = iris$Sepal.Width)), iris$Petal.Length, alpha = 1, lambda = best_lambda)
-predict(best_model,as.matrix(data.frame(Sepal.Length = iris$Sepal.Length, Sepal.Width = iris$Sepal.Width)), s = best_lambda)
-
-coisa <- ss(iris$Sepal.Length,iris$Petal.Width)
-coisapred <-predict(coisa,as.matrix(data.frame(Sepal.Length = iris$Sepal.Length)))

@@ -10,8 +10,8 @@
     {
       "nome_modelo": "modelo_np",
       "preditoras": [
-        {"Sepal.Width":10},
-        {"Sepal.Width":5}
+        {"Sepal.Width":3.5},
+        {"Sepal.Width":4}
       ]
     },
     {

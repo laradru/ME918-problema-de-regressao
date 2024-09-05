@@ -1,1 +1,1 @@
-[{"modelo":["modelo_lm"],"valores_preditos":[5.5334,5.9423]},{"modelo":["modelo_np"],"valores_preditos":[-42.3473,5.6449]},{"modelo":["modelo_lasso"],"valores_preditos":[4.2849,4.2849,5.3388,5.3388]}]
+[{"modelo":["modelo_lm"],"valores_preditos":[5.5334,5.9423]},{"modelo":["modelo_np"],"valores_preditos":[5.5433,5.5722]},{"modelo":["modelo_lasso"],"valores_preditos":[4.2849,4.2849,5.3388,5.3388]}]

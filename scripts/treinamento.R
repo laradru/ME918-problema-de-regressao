@@ -1,5 +1,7 @@
 
 treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ){
+  set.seed(123456)
+  
   dados <- read_csv(paste("entradas/",filename , sep = ""))
   
   if(tipo == "linear"){
