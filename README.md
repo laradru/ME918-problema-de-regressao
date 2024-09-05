@@ -85,7 +85,7 @@ onde:
 - `"x"` define a variável preditora ou um vetor de variáveis preditoras **(escritas como no banco de dados)**;
 - `"tipo"` define o modelo a ser executado (linear, np, lasso).
 
-Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo como disposto nas especificações do arquivo `configuracao.yaml`.
+Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo, como disposto nas especificações do arquivo `configuracao.yaml`.
 
 
 
