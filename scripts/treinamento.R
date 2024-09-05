@@ -29,9 +29,4 @@ treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ) {
     return(modelo_lasso)
   }
 }
-
-#teste <- treinamento("iris.csv","lasso","Sepal.Width", c("Petal.Width", "Petal.Length"))
-
-#as.matrix(dados[,c("Petal.Width", "Petal.Length")]
-#ss(x = as.matrix(dados[,c("Petal.Width", "Petal.Length")]), y = dados[,"Sepal.Length"], method = npr_metodo)
   

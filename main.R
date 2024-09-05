@@ -17,7 +17,7 @@ for (i in 1:length(config$modelos)){
                         config$modelos[[i]]$y,
                         config$modelos[[i]]$x
                         )
-  saveRDS(modelo, file = paste("saidas/",
+  saveRDS(modelo, file = paste("saidas/.data/",
                                config$modelos[[i]]$nome_modelo,
                                ".rds",
                                sep = "")
@@ -36,7 +36,7 @@ source("scripts/grafico.R")
 # Escrevendo graficos
 for (i in 1:length(config$modelos)){
   grafico <- getGrafico(config$tabela, config$modelos[[i]]$nome_modelo,config$modelos[[i]]$tipo,config$modelos[[i]]$x,config$modelos[[i]]$y)
-  ggsave(paste("saidas/",config$modelos[[i]]$nome_modelo,".jpeg",sep = ""))
+  ggsave(paste("saidas/grafico_",config$modelos[[i]]$nome_modelo,".jpeg",sep = ""))
 }
 
 #testes

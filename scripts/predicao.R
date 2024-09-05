@@ -6,7 +6,7 @@ getPredicao <- function() {
   
   for(i in 1:length(leitura$modelos)) {
     nome_modelo <- leitura$modelos[[i]][[1]]
-    modelo <- readRDS(paste("saidas/", nome_modelo, ".rds", sep = ""))
+    modelo <- readRDS(paste("saidas/.data/", nome_modelo, ".rds", sep = ""))
     predicao = c()
     
     for(j in 1:length(leitura$modelos[[i]][[2]])) {
@@ -29,7 +29,7 @@ getPredicao <- function() {
     )
     
     write(toJSON(list(modelo = nome_modelo, valores_preditos = predicao)),
-          file = paste("saidas/predicao_", nome_modelo, ".json", sep=""))
+          file = paste("saidas/.data/predicao_", nome_modelo, ".json", sep=""))
     
   }
   
