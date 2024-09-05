@@ -1,7 +1,7 @@
 {
   "modelos": [
     {
-      "nome_modelo": "modelo_lm",
+      "nome_modelo": "modelo_lasso",
       "preditoras": [
         {"Sepal.Width":1,"Petal.Length":3},
         {"Sepal.Width":2,"Petal.Length":4}
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "nome_modelo": "modelo_lasso",
+      "nome_modelo": "modelo_lm",
       "preditoras": [
         {"Sepal.Width":1,"Petal.Length":3},
         {"Sepal.Width":2,"Petal.Length":4}
