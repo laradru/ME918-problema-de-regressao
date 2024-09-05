@@ -49,8 +49,8 @@ dispersão dos dados. A função executada é `grafico()` e possui como argument
 - *model_name*: o nome do modelo do arquivo de configuração;  
 - tipo: o tipo da regressão escolhida pelo usuário (linear, lasso ou
 np);  
-- y: valores observados para cada observação no conjunto de dados do treinamento (sendo o *default* y = 0 na regressão linear)  
-- x: valores preditos para as observações do conjunto de dados do treinamento (sendo o *default* x = 0 na regressão linear)
+- y: valores observados para cada observação no conjunto de dados do **treinamento** (sendo o *default* y = 0 na regressão linear)  
+- x: valores preditos para as observações do conjunto de dados do **treinamento** (sendo o *default* x = 0 na regressão linear)
 
 ### Para o USUÁRIO:
 
