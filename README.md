@@ -78,8 +78,12 @@ modelos:
 }
 ```
 
-
-
+onde:
+- `"tabela"` recebe o nome do banco de dados e sua respectiva extensão `.csv`; 
+- `"nome_modelo"` define o nome do modelo. **Por favor, mantenha a escrita sempre da mesma forma**;
+- `"y"` define a variável resposta **(escrita como no banco de dados)**;
+- `"x"` define a variável preditora ou um vetor de variáveis preditoras **(escritas como no banco de dados)**;
+- `"tipo"` define o modelo a ser executado (linear, np, lasso).
 
 
 
