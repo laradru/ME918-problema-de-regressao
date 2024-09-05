@@ -52,7 +52,7 @@ np);
 - y: variável resposta (sendo o *default* y = 0 na regressão linear)  
 - x: variáveis preditoras (sendo o *default* x = 0 na regressão linear)
 
-### Requisitos para o USUÁRIO:
+### Para o USUÁRIO:
 
 Por favor, antes de utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
@@ -85,16 +85,11 @@ onde:
 - `"x"` define a variável preditora ou um vetor de variáveis preditoras **(escritas como no banco de dados)**;
 - `"tipo"` define o modelo a ser executado (linear, np, lasso).
 
+Você também encontrará na pasta "entradas" o arquivo `preditores.jason`.
 
+com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
 
-
-
-### Requisitos de entrada
->>>>>>> 0ccf707bcd69305654c7dd8f20eaa8d3b1d7aada
-
-config …nome é o mesmo do modelo de cofiguracao nao pode colocar 2
-modelos cm mesmo nome nao pode var categorica. aruqivos
-alteraveis….arquiv csv , preditores jason…configuracao.yaml.
+### Execução
 
 ### Resultados produzidos
 
