@@ -29,7 +29,7 @@ getPredicao <- function() {
     )
     
     write(toJSON(list(modelo = nome_modelo, valores_preditos = predicao)),
-          file = paste("saidas/", nome_modelo, ".json", sep=""))
+          file = paste("saidas/predicao_", nome_modelo, ".json", sep=""))
     
   }
   

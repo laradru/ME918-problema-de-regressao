@@ -3,7 +3,7 @@ getGrafico <- function(dados_nome,modelo_nome, tipo, X = 0, y = 0) {
   dados <- read_csv(paste("entradas/",dados_nome , sep = ""))
   
   modelo <- readRDS(paste("saidas/", modelo_nome,".rds", sep = ""))
-  valores_preditos <- fromJSON(paste("saidas/",modelo_nome,".json", sep =""))
+  valores_preditos <- fromJSON(paste("saidas/predicao_",modelo_nome,".json", sep =""))
   
   if (tipo == "linear"){
     valores_fitados <- modelo$fitted.values

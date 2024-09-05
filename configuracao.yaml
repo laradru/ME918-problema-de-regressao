@@ -2,7 +2,7 @@ tabela: iris.csv
 modelos:
   - "nome_modelo": modelo_lm
     "y": Sepal.Length
-    "x": [Sepal.Width, Petal.Length]
+    "x": [Sepal.Width, Petal.Length, Petal.Width]
     "tipo": linear
   - "nome_modelo": modelo_np
     "y": Sepal.Length
@@ -11,7 +11,7 @@ modelos:
     "metodo_np":
   - "nome_modelo": modelo_lasso
     "y": Sepal.Length
-    "x": [Sepal.Width, Petal.Length]
+    "x": [Sepal.Width, Petal.Length, Petal.Width]
     "tipo": lasso
      
 

@@ -28,7 +28,7 @@ for (i in 1:length(config$modelos)){
 source("scripts/predicao.R")
 
 # Escrevendo predições
-write(toJSON(getPredicao()), file = "saidas/predicoes.json") #modificar o script predicao para comportar outros modelos
+write(toJSON(getPredicao(), pretty = TRUE), file = "saidas/todas_predicoes.json")
 
 #definindo funçao gráfico
 source("scripts/grafico.R")

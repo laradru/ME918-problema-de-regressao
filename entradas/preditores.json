@@ -3,8 +3,9 @@
     {
       "nome_modelo": "modelo_lasso",
       "preditoras": [
-        {"Sepal.Width":1,"Petal.Length":3},
-        {"Sepal.Width":2,"Petal.Length":4}
+        {"Sepal.Width":1,"Petal.Length":3, "Petal.Width": 1.4},
+        {"Sepal.Width":2,"Petal.Length":4, "Petal.Width": 1.9},
+        {"Sepal.Width":4,"Petal.Length":7, "Petal.Width": 3}
       ]
     },
     {
@@ -17,8 +18,9 @@
     {
       "nome_modelo": "modelo_lm",
       "preditoras": [
-        {"Sepal.Width":1,"Petal.Length":3},
-        {"Sepal.Width":2,"Petal.Length":4}
+        {"Sepal.Width":1,"Petal.Length":3, "Petal.Width": 1.4},
+        {"Sepal.Width":2,"Petal.Length":4, "Petal.Width": 1.9},
+        {"Sepal.Width":4,"Petal.Length":7, "Petal.Width": 3}
       ]
     }
     
