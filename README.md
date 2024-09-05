@@ -13,7 +13,7 @@ Dados) do curso de Estatística da UNICAMP.
 
 # Instruções de uso e funcionamento
 
-O objetivo deste produto é fornecer ao usuário predições decorrentes da
+O objetivo com este produto é fornecer ao usuário predições decorrentes da
 análise de dados com variáveis quantitativas, utilizando diferentes
 modelos de regressão. Antes de utilizar o produto, por favor, garanta
 que você tenha os seguintes requisitos em sua máquina:
@@ -87,7 +87,7 @@ onde:
 
 Você também encontrará na pasta "entradas" o arquivo `preditores.jason`.
 
-com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
+
 
 ### Execução
 
