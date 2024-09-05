@@ -88,19 +88,14 @@ onde:
 Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo, como disposto nas especificações do arquivo `configuracao.yaml`.
 
 
-
 ### Execução
+No arquivo `main.R` você encontrará todas as bibliotecas necessárias para executar o produto.
 
 ### Resultados produzidos
 
 
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
 
 You can also embed plots, for example:
-
 ![](README_files/figure-gfm/pressure-1.png)<!-- -->
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub.
