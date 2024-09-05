@@ -89,7 +89,7 @@ Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um
 
 
 ### Execução
-No arquivo `main.R` você encontrará todas as bibliotecas necessárias para executar o produto.
+No arquivo `main.R` você encontrará todas os pacotes necessários para executar o produto. Você também encontrará a função `read_yaml()` que realizará a leitura do arquivo de configuração e a função `source()`, para a leitura do treinamento dos modelos de regressão. Baixe o arquivo e execute o *"script"*, clicando em *"RUN"*.
 
 ### Resultados produzidos
 
