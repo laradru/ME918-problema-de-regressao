@@ -1,6 +1,5 @@
 
-treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ){
-  set.seed(123456)
+treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ) {
   
   dados <- read_csv(paste("entradas/",filename , sep = ""))
   

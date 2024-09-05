@@ -5,9 +5,11 @@ library(jsonlite)
 library(ggplot2)
 library(glmnet)
 
+set.seed(123456)
+
 config <- read_yaml("configuracao.yaml")
 
-source("scripts/treinamento.r")
+source("scripts/treinamento.R")
 
 for (i in 1:length(config$modelos)){
   modelo <- treinamento(config$tabela,
@@ -23,13 +25,13 @@ for (i in 1:length(config$modelos)){
 
 }
 
-source("scripts/predicao.r")
+source("scripts/predicao.R")
 
 # Escrevendo predições
 write(toJSON(getPredicao()), file = "saidas/predicoes.json") #modificar o script predicao para comportar outros modelos
 
 #definindo funçao gráfico
-source("scripts/grafico.r")
+source("scripts/grafico.R")
 
 # Escrevendo graficos
 for (i in 1:length(config$modelos)){
