@@ -30,7 +30,7 @@ O *script* “treinamento” contém as funções de regressão elaboradas para 
 regressão utilizados no treinamento são: Regressão Linear (linear), Regressão
 Lasso (lasso) e Regressão Não-Paramétrica (np).
 
-`treinamento()`: é a função principal com os modelos preditivos. Ela recebe os
+`treinamento()`: é a função principal com os modelos preditivos, salvos em `.rds`. Ela recebe os
 seguintes argumentos:  
 - *filename*: banco de dados fornecidos pelo usuário na pasta
 “entradas”;  
@@ -41,7 +41,7 @@ np);
 - npr_metodo: por "*default*", npr_metodo.  
 
 O *script* “predição” contém a função `getPredicao()` para leitura dos
-valores das variáveis preditoras do modelo treinado e geração dos
+valores das variáveis preditoras do modelo treinado, disponíveis em um arquivo do formato `.json` na pasta "entradas", e geração dos
 valores preditos.
 
 O script “grafico” contém o código para a geração dos gráficos de
@@ -56,8 +56,8 @@ np);
 
 Por favor, ao utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
-- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um output será gerado com uma mensagem de erro.
--  
+- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
+- o nome do modelo
 
 
 
