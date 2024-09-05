@@ -55,7 +55,7 @@ np);
 ### Para o USUÁRIO:
 
 Por favor, antes de utilizar o produto, certifique-se que:
-- seu banco de dados esteja no formato `.csv`, e o coloque na pasta “entradas”.  
+- seu banco de dados esteja no formato `.csv`. Coloque-o na pasta “entradas”.  
 - suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
 - o arquivo `configuracao.yaml` esteja devidamente padronizado, com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
 
@@ -85,7 +85,7 @@ onde:
 - `"x"` define a variável preditora ou um vetor de variáveis preditoras **(escritas como no banco de dados)**;
 - `"tipo"` define o modelo a ser executado (linear, np, lasso).
 
-Você também encontrará na pasta "entradas" o arquivo `preditores.jason`.
+Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo como disposto nas especificações do arquivo `configuracao.yaml`.
 
 
 
