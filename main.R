@@ -34,9 +34,20 @@ write(toJSON(getPredicao(), pretty = TRUE), file = "saidas/todas_predicoes.json"
 source("scripts/grafico.R")
 
 # Escrevendo graficos
-for (i in 1:length(config$modelos)){
-  grafico <- getGrafico(config$tabela, config$modelos[[i]]$nome_modelo,config$modelos[[i]]$tipo,config$modelos[[i]]$x,config$modelos[[i]]$y)
-  ggsave(paste("saidas/grafico_",config$modelos[[i]]$nome_modelo,".jpeg",sep = ""))
+for (i in 1:length(config$modelos)) {
+  grafico <- getGrafico(config$tabela, 
+                        config$modelos[[i]]$nome_modelo, 
+                        config$modelos[[i]]$tipo, 
+                        config$modelos[[i]]$x, 
+                        config$modelos[[i]]$y)
+  
+  if (config$modelos[[i]]$tipo == "linear") {
+    ggsave(paste("saidas/grafico_", config$modelos[[i]]$nome_modelo, ".jpeg", sep = ""), 
+           plot = grafico$ggrafico)
+    ggsave(paste("saidas/qqplot_", config$modelos[[i]]$nome_modelo, ".jpeg", sep = ""), 
+           plot = grafico$qqplot)
+  } else {
+    ggsave(paste("saidas/grafico_", config$modelos[[i]]$nome_modelo, ".jpeg", sep = ""), 
+           plot = grafico)
+  }
 }
-
-#testes

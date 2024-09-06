@@ -8,6 +8,13 @@ getGrafico <- function(dados_nome,modelo_nome, tipo, X = 0, y = 0) {
   if (tipo == "linear"){
     valores_fitados <- modelo$fitted.values
     valores_observados <- modelo$model[, 1]
+    residuos_studentizados <- rstudent(modelo)
+    qqplot <- ggplot(data.frame(residuos_studentizados), 
+                     aes(sample = residuos_studentizados)) +
+      stat_qq(col = "blue", size = 2, alpha = 0.6) +
+      stat_qq_line(col = "red", size = 1) +
+      labs(title = "QQ-Plot", x = "Quantis Teóricos", y = "Quantis Amostrais") +
+      theme_bw()
     
   }
   if  (tipo == "lasso"){
@@ -29,7 +36,10 @@ getGrafico <- function(dados_nome,modelo_nome, tipo, X = 0, y = 0) {
          y = "Valores observados") +
     theme_bw()
   
-  return(ggrafico)
-  
+  if (tipo == "linear") {
+    return(list(ggrafico = ggrafico, qqplot = qqplot))
+  } else {
+    return(ggrafico)
+  }
 }
 
