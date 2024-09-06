@@ -89,11 +89,18 @@ Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um
 
 
 ### Execução
-No arquivo `main.R` você encontrará todos os pacotes necessários para executar o produto. Você também encontrará a função `read_yaml()` que realizará a leitura do arquivo de configuração e a função `source()`, para a leitura do treinamento dos modelos de regressão. Baixe o arquivo e execute o *"script"*, clicando em *"Run"*.
+No arquivo `main.R` você encontrará todos os pacotes necessários para executar o produto. Você também encontrará a função `read_yaml()` que realizará a leitura do arquivo de configuração e a função `source()`, para a leitura do treinamento dos modelos de regressão. Baixe o projeto clicando em:
+
+https://github.com/laradru/ME918-problema-de-regressao/archive/refs/heads/main.zip
+
+Abra o projeto, clicando em `Regressao.Rproj`. Após fornecer o banco de dados e os preditores na pasta "entrada", abra o arquivo `main.R` e execute o *"script"* (selecione o *"script"* por completo e clique em *"Run"*).
 
 ### Resultados produzidos
+Após a execução, os resultados produzidos poderão ser acessados na pasta "saidas". Os resultados incluem:
 
-
+- o arquivo `todas_predicoes.json`, que contém os valores preditos pelos modelos de regressão;
+- um gráfico de dispersão com os valores ajustados *versus* valores observados, no formato `.jpeg` (um gráfico por modelo);
+- e um gráfico QQ-Plot (no caso do modelo linear).
 
 
 You can also embed plots, for example:
