@@ -103,6 +103,4 @@ Após a execução, os resultados produzidos poderão ser acessados na pasta "sa
 - e um gráfico QQ-Plot (no caso do modelo linear).
 
 
-You can also embed plots, for example:
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
 
