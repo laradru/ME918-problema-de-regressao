@@ -1,9 +1,14 @@
+# Instalações de pacotes registrados no renv.lock
+renv::restore()
+
+# Pacotes
 library(readr)
 library(yaml)
 library(npreg)
 library(jsonlite)
 library(ggplot2)
 library(glmnet)
+library(renv)
 
 set.seed(123456)
 
@@ -30,7 +35,7 @@ source("scripts/predicao.R")
 # Escrevendo predições
 write(toJSON(getPredicao(), pretty = TRUE), file = "saidas/todas_predicoes.json")
 
-#definindo funçao gráfico
+# Definindo funçao gráfico
 source("scripts/grafico.R")
 
 # Escrevendo graficos
