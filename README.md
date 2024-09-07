@@ -85,7 +85,40 @@ onde:
 - `"x"` define a variável preditora ou um vetor de variáveis preditoras **(escritas como no banco de dados)**;
 - `"tipo"` define o modelo a ser executado (linear, np, lasso).
 
-Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo, como disposto nas especificações do arquivo `configuracao.yaml`.
+Você também encontrará na pasta "entradas" o arquivo `preditores.json`. É um arquivo editável, para que você insira os nomes e valores das variáveis preditoras para gerar novas predições, bem como o nome do modelo, como disposto nas especificações do arquivo `configuracao.yaml`. O arquivo `preditores.json` segue a seguinte estrutura:
+
+``` r
+{
+  "modelos": [
+    {
+      "nome_modelo": "modelo_lasso",
+      "preditoras": [
+        {"Sepal.Width":1,"Petal.Length":3, "Petal.Width": 1.4},
+        {"Sepal.Width":2,"Petal.Length":4, "Petal.Width": 1.9},
+        {"Sepal.Width":4,"Petal.Length":7, "Petal.Width": 3}
+      ]
+    },
+    {
+      "nome_modelo": "modelo_np",
+      "preditoras": [
+        {"Sepal.Width":3.5},
+        {"Sepal.Width":4}
+      ]
+    },
+    {
+      "nome_modelo": "modelo_lm",
+      "preditoras": [
+        {"Sepal.Width":1,"Petal.Length":3, "Petal.Width": 1.4},
+        {"Sepal.Width":2,"Petal.Length":4, "Petal.Width": 1.9},
+        {"Sepal.Width":4,"Petal.Length":7, "Petal.Width": 3}
+      ]
+    }
+    
+  ]
+  
+}
+
+```
 
 
 ### Execução
