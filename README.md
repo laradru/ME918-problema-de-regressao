@@ -56,7 +56,7 @@ np);
 
 Por favor, antes de utilizar o produto, certifique-se que:
 - seu banco de dados esteja no formato `.csv`. Coloque-o na pasta “entradas”.  
-- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro.
+- suas variáveis (preditoras e resposta) sejam do tipo “quantitativas”, caso contrário, ao rodar o projeto, um *output* será gerado com uma mensagem de erro: *"Erro: coluna "x" contém uma variável não numérica"*.
 - o arquivo `configuracao.yaml` esteja devidamente padronizado, com os nomes das variáveis escritas da mesma maneira que aparecem no banco de dados. Este arquivo deve respeitar a seguinte estrutura:
 
 ``` r
