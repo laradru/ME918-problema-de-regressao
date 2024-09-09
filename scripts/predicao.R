@@ -11,11 +11,6 @@ getPredicao <- function() {
     
     for(j in 1:length(leitura$modelos[[i]][[2]])) {
       df <- data.frame(leitura$modelos[[i]][[2]][j])
-      for (col_name in names(df)) {
-        if (!all(!is.na(as.numeric(df[[col_name]])))) {
-          stop("Erro: coluna ", col_name, " contém uma variável não numérica")
-        }
-      }
       
       if(class(modelo)[1] != "lm") {
         df <- as.matrix(df)

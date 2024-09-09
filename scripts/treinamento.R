@@ -1,7 +1,13 @@
 
 treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ) {
-  
+
   dados <- read_csv(paste("entradas/",filename , sep = ""))
+  
+  for (col_name in names(dados[,X])) {
+    if (class(as.data.frame(dados)[,col_name]) != "numeric") {
+      stop("Coluna ", col_name," contém uma variável não numérica")
+    }
+  }
   
   if(tipo == "linear"){
     formula <- paste(y,"~", X[1])
@@ -19,6 +25,10 @@ treinamento <- function(filename, tipo, y, X, npr_metodo = "GCV" ) {
     return (modelo_lm)
   }
   if (tipo == "np"){
+    if (length(X) > 1){
+      stop("Mais do que uma variável preditora em uma regressão não paramétrica")
+    }
+    
     modelo_np <- ss(x = as.matrix(dados[,X]), y = as.matrix(dados[,y]), method = npr_metodo)
     
     return(modelo_np)
